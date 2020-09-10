@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int i, j;
+
+    printf("   |  1  2  3  4  5  6  7  8  9\n");
+    printf("---+----------------------------\n");
+    for (i = 1; i <= 9; i++)
+    {
+        for (j = 1; j <= 9; j++)
+        {
+            if (j == 1)
+                printf("%3d|%3d", i, i * j);
+            else
+                printf("%3d", i * j);
+        }
+        putchar('\n');
+    }
+    return 0;
+}
